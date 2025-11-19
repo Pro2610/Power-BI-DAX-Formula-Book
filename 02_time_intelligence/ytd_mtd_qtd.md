@@ -1,0 +1,3 @@
+Sales MoM Change :=
+[Total Sales] -
+CALCULATE ( [Total Sales], DATEADD ( 'Date'[Date], -1, MONTH ) )
