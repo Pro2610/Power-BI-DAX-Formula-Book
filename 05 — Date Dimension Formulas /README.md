@@ -1,4 +1,4 @@
-# 05 — Date Dimension Essentials (Power BI / DAX)
+# 05_Date Dimension Essentials (Power BI / DAX)
 
 Цей блок містить ключові DAX-формули для роботи з календарною таблицею (`Date Dimension`).  
 Вони потрібні практично в кожному реальному Power BI проєкті.
