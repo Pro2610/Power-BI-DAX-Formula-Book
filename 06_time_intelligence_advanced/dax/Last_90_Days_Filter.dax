@@ -1,0 +1,10 @@
+Revenue Last 90 Days :=
+CALCULATE(
+    [Total Revenue],
+    DATESINPERIOD(
+        'Date'[Date],
+        MAX('Date'[Date]),
+        -90,
+        DAY
+    )
+)
