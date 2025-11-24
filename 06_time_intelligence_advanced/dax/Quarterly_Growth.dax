@@ -1,0 +1,14 @@
+Revenue QTD :=
+TOTALQTD(
+    [Total Revenue],
+    'Date'[Date]
+)
+
+Revenue Prev QTD :=
+CALCULATE(
+    [Revenue QTD],
+    DATEADD('Date'[Date], -1, QUARTER)
+)
+
+Quarterly Growth % :=
+DIVIDE([Revenue QTD] - [Revenue Prev QTD], [Revenue Prev QTD])
