@@ -1,0 +1,10 @@
+Revenue Full Months Only :=
+VAR LastDate = MAX('Date'[Date])
+VAR LastMonth = MONTH(LastDate)
+VAR LastMonthStart = DATE(YEAR(LastDate), LastMonth, 1)
+
+RETURN
+CALCULATE(
+    [Total Revenue],
+    'Date'[Date] < LastMonthStart
+)
