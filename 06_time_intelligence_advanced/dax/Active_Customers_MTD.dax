@@ -1,0 +1,5 @@
+Active Customers MTD :=
+CALCULATE(
+    DISTINCTCOUNT('Sales'[CustomerID]),
+    DATESMTD('Date'[Date])
+)
