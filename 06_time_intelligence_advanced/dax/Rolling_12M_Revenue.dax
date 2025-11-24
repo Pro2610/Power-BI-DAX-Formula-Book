@@ -1,0 +1,10 @@
+Rolling 12M Revenue :=
+CALCULATE(
+    [Total Revenue],
+    DATESINPERIOD(
+        'Date'[Date],
+        MAX('Date'[Date]),
+        -12,
+        MONTH
+    )
+)
