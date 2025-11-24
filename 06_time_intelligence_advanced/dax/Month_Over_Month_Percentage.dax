@@ -1,0 +1,8 @@
+Revenue Prev Month :=
+CALCULATE(
+    [Total Revenue],
+    DATEADD('Date'[Date], -1, MONTH)
+)
+
+MoM % :=
+DIVIDE([Total Revenue] - [Revenue Prev Month], [Revenue Prev Month])
