@@ -1,0 +1,14 @@
+Revenue YTD :=
+TOTALYTD(
+    [Total Revenue],
+    'Date'[Date]
+)
+
+Revenue PYTD :=
+CALCULATE(
+    [Revenue YTD],
+    DATEADD('Date'[Date], -1, YEAR)
+)
+
+YTD vs PYTD % :=
+DIVIDE([Revenue YTD] - [Revenue PYTD], [Revenue PYTD])
