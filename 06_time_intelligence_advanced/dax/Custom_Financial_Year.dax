@@ -1,0 +1,7 @@
+Financial Year :=
+VAR MonthNum = MONTH('Date'[Date])
+RETURN
+    IF(MonthNum >= 7,
+        YEAR('Date'[Date]) + 1,
+        YEAR('Date'[Date])
+    )
