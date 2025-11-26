@@ -1,4 +1,4 @@
-# 08 — Variables & Iterators (VAR, SUMX, FILTER, ADDCOLUMNS)
+# 08_Variables & Iterators (VAR, SUMX, FILTER, ADDCOLUMNS)
 
 DAX-патерни, які дозволяють створювати гнучкі, ефективні та читабельні формули завдяки:
 - **VAR** — проміжні змінні;
