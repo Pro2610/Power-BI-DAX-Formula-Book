@@ -7,3 +7,9 @@ VAR OperatingCost =
     SUM ( Finance[OperatingCost] )
 RETURN
 Revenue - COGS - OperatingCost
+
+Пояснення
+
+VAR підвищує читабельність:
+окремо виносимо виручку, собівартість, операційні витрати;
+далі повертаємо кінцевий результат.
